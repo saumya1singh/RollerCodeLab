@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:tools="http://schemas.android.com/tools"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:orientation="vertical"
+ android:background="@color/greenColor"
+ tools:context=".Fragment.OneRollerFragemnt">
+ 
+ <LinearLayout
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+  
+  
+  <androidx.appcompat.widget.AppCompatImageView
+   android:layout_width="match_parent"
+   android:layout_height="200dp"
+   android:layout_gravity="center"
+   app:srcCompat="@drawable/empty_dice"
+   android:layout_margin="16dp"
+   android:id="@+id/imagedice"
+   tools:ignore="VectorDrawableCompat"/>
+  
+  <androidx.appcompat.widget.AppCompatTextView
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="Click to Roll"
+   android:textSize="20dp"
+   android:textAlignment="center"
+   android:paddingStart="32dp"
+   android:paddingEnd="32dp"
+   android:id="@+id/btnroll"
+   android:layout_gravity="center"
+   android:gravity="center"
+   android:textStyle="bold"
+   android:textColor="@color/greenColor"
+   android:background="@drawable/rounded_button_fill"
+   android:layout_marginBottom="32dp"
+   app:layout_constraintBottom_toBottomOf="parent"
+   app:layout_constraintStart_toStartOf="parent"
+   app:layout_constraintEnd_toEndOf="parent"
+   android:layout_marginStart="32dp"
+   android:layout_marginEnd="32dp"/>
+  <!--<LinearLayout android:layout_width="194dp" android:layout_height="wrap_content"-->
+  <!--android:orientation="vertical"-->
+  <!--&gt;-->
+  <!--<android.support.v7.widget.AppCompatImageView android:layout_width="165dp" android:layout_height="217dp"-->
+  <!--app:srcCompat="@drawable/empty_dice"-->
+  <!--android:layout_margin="10dp"-->
+  <!--android:id="@+id/imagedice2"-->
+  <!--tools:ignore="VectorDrawableCompat"/>-->
+  
+  <!--<android.support.v7.widget.AppCompatButton android:layout_width="136dp" android:layout_height="60dp"-->
+  <!--android:text="Player2 ROLL"-->
+  <!--android:textAlignment="center"-->
+  <!--android:layout_marginLeft="25dp"-->
+  <!--android:id="@+id/btnroll2"-->
+  <!--android:textStyle="bold"-->
+  <!--android:background="#55AF7C3C"-->
+  <!--/>-->
+  <!--</LinearLayout>-->
+  <!--</LinearLayout>-->
+  
+  <androidx.recyclerview.widget.RecyclerView
+   android:id="@+id/rv"
+   android:layout_width="match_parent"
+   android:paddingBottom="15dp"
+   android:layout_marginStart="32dp"
+   android:layout_marginEnd="32dp"
+   android:layout_gravity="center"
+   android:layout_height="wrap_content"
+   app:layout_constraintEnd_toEndOf="parent"
+   app:layout_constraintStart_toStartOf="parent"
+   android:layout_marginBottom="8dp"
+   app:layout_constraintBottom_toBottomOf="parent"
+   android:layout_marginTop="8dp"/>
+ 
+ </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/single_dice"
+            android:title="One Die"/>
+
+    <item
+            android:id="@+id/navigation_dashboard"
+            android:icon="@drawable/double_dice"
+            android:title="Two Die"/>
+
+    <item
+            android:id="@+id/navigation_notifications"
+            android:icon="@drawable/triple_dice"
+            android:title="3 Die"/>
+
+</menu>
